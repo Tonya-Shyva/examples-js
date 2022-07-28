@@ -540,19 +540,19 @@
 // -----ОПЕРАЦІЯ REST ДЛЯ ЗБИРАННЯ ЧАСТИНИ АРГУМЕНТІВ ФУНКЦІЇ---
 //Функція addOverNum() рахує суму всіх аргументів. Зміни параметри і тіло функції addOverNum() таким чином, щоб вона рахувала суму тільки тих аргументів, які більші за задане число. Це число повинно бути першим параметром функції.
 
-// function addOverNum(...args) {
-//   let total = 0;
+function addOverNum(...args) {
+  let total = 0;
 
-//   for (const arg of args) {
-//     console.log(arg);
-//     let addNumber = arg[0];
-//     if (arg > addNumber) {
-//       total += arg;
-//     }
-//   }
+  for (const arg of args) {
+    console.log(arg);
+    let addNumber = arg[0];
+    if (arg > addNumber) {
+      total += arg;
+    }
+  }
 
-//   return total;
-//   // Change code above this line
-// }
-// console.log(addOverNum(50, 15, 27));
-// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+  return total;
+  // Change code above this line
+}
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
